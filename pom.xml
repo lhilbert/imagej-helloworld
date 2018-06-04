@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>19.2.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>io.github.lhilbert</groupId>
+	<artifactId>imagej-helloworld</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+
+	<name>Hello World Command</name>
+	<description>A Maven project implementing an ImageJ hello world command.</description>
+	<url>http://github.com/lhilbert/imagej-helloworld</url>
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>My Company</name>
+		<url>http://mycompany.com/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<!-- See https://imagej.net/Team -->
+		<developer>
+			<id>lhilbert</id>
+			<name>Lennart Hilbert</name>
+			<url>http://imagej.net/User:lhilbert</url>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>none</name>			
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/lhilbert/imagej-helloworld</connection>
+		<developerConnection>scm:git:git@github.com:lhilbert/imagej-helloworld</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/lhilbert/imagej-helloworld</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/lhilbert/imagej-helloworld/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>io.github.lhilbert.imagej-helloworld</package-name>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>Lennart Hilbert</license.copyrightOwners>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-legacy</artifactId>
+		</dependency>
+	</dependencies>
+</project>
